@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "171462489864",
+    "firebase_url": "https://advance-sonu-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "advance-sonu",
+    "storage_bucket": "advance-sonu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171462489864:android:6af8b4d947fc02311a9ebd",
+        "android_client_info": {
+          "package_name": "com.example.advancetour_guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171462489864-g9btcb7j5gv3d5m85r5m5047aga93c8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc2Ki4XD5wrEYry6Fq_jWuQl_pAU5mOWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171462489864-g9btcb7j5gv3d5m85r5m5047aga93c8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

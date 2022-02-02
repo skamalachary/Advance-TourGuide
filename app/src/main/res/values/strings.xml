@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AdvanceTourGuide</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_app_bar_open_drawer_description">Open navigation drawer</string>
+
+    <string-array name="type">
+        <item>Cable problem</item>
+        <item>Network problem</item>
+        <item>Set-up box problem</item>
+        <item>Payment problem</item>
+    </string-array>
+</resources>
