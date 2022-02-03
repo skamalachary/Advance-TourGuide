@@ -47,8 +47,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="5dp"
                 android:text="find my location"
-                android:textColor="@color/dark_blue"
-                android:background="#00CFC1C1"
+                android:textColor="@color/black"
+                android:background="@color/light_blue"
                 android:visibility="visible" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
