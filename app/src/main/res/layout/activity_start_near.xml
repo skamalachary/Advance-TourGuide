@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fsq_medium_grey"
+    android:stretchColumns="1"
+   >
+
+    <TableRow android:padding="5dip">
+
+
+        <Button
+            android:id="@+id/restaurant"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/restaurant"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/movie_theater"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/cinema"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="17dp"/>
+
+
+    </TableRow>
+    <TableRow android:padding="5dip">
+
+
+        <Button
+            android:id="@+id/shopping_mall"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/mall"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/hospital"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/hospital"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="17dp"/>
+
+
+    </TableRow>
+    <TableRow android:padding="5dip">
+
+
+        <Button
+            android:id="@+id/school"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/school"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/park"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/park"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="17dp"/>
+
+
+    </TableRow>
+    <TableRow android:padding="5dip">
+
+
+
+        <Button
+            android:id="@+id/atm"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/atrm"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:id="@+id/cafe"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/cafe"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="17dp"/>
+
+
+    </TableRow>
+</TableLayout>

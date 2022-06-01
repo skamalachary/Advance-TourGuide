@@ -67,7 +67,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     private FirebaseDatabase database;
     private FirebaseAuth mAuth;
     private String feedback;
-    private Button btnMap;
+    private Button btnMap,btnNext;
 
     @Override
     protected void onPostResume() {
@@ -83,7 +83,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
 
 
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home_main);
         pref =  getSharedPreferences(PREF_NAME, PRIVATE_MODE);
         database = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
@@ -99,7 +99,13 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         mDrawer.addDrawerListener(toggle);
         toggle.syncState();
 
-
+        btnNext = findViewById(R.id.btn_next);
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this,HomeActivity.class));
+            }
+        });
 
 
     }

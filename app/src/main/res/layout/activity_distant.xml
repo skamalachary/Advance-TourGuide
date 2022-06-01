@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nist.project.amrit.advancetour.DistantActivity">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="9dp"
+            android:background="@android:color/white">
+
+            <Button
+                android:id="@+id/btnPlacePick"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Pick A Place"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btnTopPicks"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Top picks"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+</LinearLayout>

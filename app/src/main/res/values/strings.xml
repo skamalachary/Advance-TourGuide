@@ -10,4 +10,60 @@
         <item>Set-up box problem</item>
         <item>Payment problem</item>
     </string-array>
+
+    <string name="foursquare_client_id">DPFWRMIBQN4MCRC4ND4NEWGG1FZ4NW2NJPJOIXOAMUUZGUSK</string>
+    <string name="foursquare_client_secret">MXJG4PPWU0R2GPDTUIOCEXEZKRAQG5SWLOUKLXY0TFUODM3N</string>
+
+    <string-array name="place_type">
+        <item>school</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>hindu_temple</item>
+        <item>restaurant</item>
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>School</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Hindu Temple</item>
+        <item>Restaurant</item>
+    </string-array>
+
+    <string-array name="venue_type">
+        <item>Food</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Hospital</item>
+        <item>Temple</item>
+        <item>Restaurant</item>
+    </string-array>
+
+    <string-array name="venue_type_name">
+        <item>Food Joints</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Hospital</item>
+        <item>Temple</item>
+        <item>Restaurants</item>
+    </string-array>
+    <string-array name="search_type">
+        <item>Explore Place</item>
+        <item>See Top Recomendations</item>
+    </string-array>
+
+    <string-array name="search_type_name">
+        <item>Explore Place</item>
+        <item>See Top Recomendations</item>
+    </string-array>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_xtest">XtestActivity</string>
 </resources>

@@ -1,26 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
+    android:background="@color/fsq_medium_grey"
     android:layout_height="match_parent"
-    tools:openDrawer="start">
+    >
 
-    <include
-        layout="@layout/nav_app_bar_main"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="casual"
+        android:text="Let's Explore..."
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header_main"
-        app:menu="@menu/activity_main_drawer" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/nearby"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:background="@drawable/nearby"
+        android:layout_above="@+id/memory"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:id="@+id/far"
+        android:layout_width="170dp"
+        android:background="@drawable/far"
+        android:layout_height="110dp"
+        android:layout_above="@+id/memory"
+        android:layout_toEndOf="@+id/nearby"
+        android:layout_marginEnd="17dp"/>
+
+    <Button
+        android:id="@+id/memory"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/memories"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nearby"
+        android:layout_alignEnd="@+id/far" />
 
 
 
-</androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

@@ -9,6 +9,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
 
     <application
         android:allowBackup="true"
@@ -19,9 +23,9 @@
         android:theme="@style/AppTheme">
       
 
-        <meta-data
+      <!--  <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/map_key" />
+            android:value="@string/map_key" />-->
 
         <activity android:name="com.sonu.advancesonu.success" />
         <activity
@@ -87,6 +91,40 @@
         <meta-data
             android:name="firebase_analytics_collection_enabled"
             android:value="false" />
+
+
+
+        <activity android:name=".main.SplashActivity">
+
+        </activity>
+
+        <activity android:name=".main.RegisterActivity" />
+        <activity android:name=".main.HomeActivity" >
+
+        </activity>
+        <activity android:name=".main.NearActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA_LAplOzfBwt41sePe6oHy0yVLA98ZCBU" />
+
+        <activity android:name=".main.PlaceDetailsActivity" />
+        <activity android:name=".main.DistantActivity" />
+
+        <service android:name="com.mapbox.mapboxsdk.telemetry.TelemetryService" />
+
+        <activity android:name=".main.DistantStartActivity" />
+        <activity android:name=".main.XtestActivity" />
+        <activity android:name=".main.VenueDetailsActivity" />
+        <activity android:name=".main.VenueExploreActivity" />
+        <activity android:name=".main.StartNearActivity" />
+        <activity android:name=".main.StartDistantActivity"></activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA_LAplOzfBwt41sePe6oHy0yVLA98ZCBU" />
     </application>
 
 </manifest>
