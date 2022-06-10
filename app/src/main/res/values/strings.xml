@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AdvanceTourGuide</string>
+    <string name="app_name">Columbus</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_app_bar_open_drawer_description">Open navigation drawer</string>

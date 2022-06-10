@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -27,8 +28,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     ViewPager viewPager;
     int images[] = {R.drawable.image_1, R.drawable.image_2, R.drawable.image_3, R.drawable.image_4, R.drawable.image_5, R.drawable.image_7, R.drawable.image_8};
     MyCustomPagerAdapter myCustomPagerAdapter;
-    Button near_btn;
-    Button distant_btn;
+    LinearLayout near_btn;
+    LinearLayout distant_btn;
     int currentPage = 0;
     Timer timer;
     final long DELAY_MS = 500;//delay in milliseconds before task is to be executed
@@ -38,9 +39,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        near_btn = (Button) findViewById(R.id.nearby);
+        near_btn = (LinearLayout) findViewById(R.id.nearby);
         near_btn.setOnClickListener(this);
-        distant_btn=(Button) findViewById(R.id.far);
+        distant_btn=(LinearLayout) findViewById(R.id.far);
         distant_btn.setOnClickListener(this);
 
         viewPager = (ViewPager)findViewById(R.id.viewPager);
@@ -143,6 +144,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     public void onBackPressed() {
-        finishAffinity();
+      super.onBackPressed();
+        //  finishAffinity();
     }
 }

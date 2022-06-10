@@ -4,27 +4,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sonu.advancesonu.R;
 
 public class StartNearActivity extends AppCompatActivity implements View.OnClickListener{
-    private Button btn_restaurant,btn_atm,btn_mall,btn_hospital,btn_school,btn_park,btn_cinema,btn_cafe;
+    private LinearLayout btn_restaurant,btn_atm,btn_mall,btn_hospital,btn_school,btn_park,btn_cinema,btn_cafe;
     String typeName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_near);
-        btn_restaurant=(Button)findViewById(R.id.restaurant);
-        btn_atm=(Button)findViewById(R.id.atm);
-        btn_mall=(Button)findViewById(R.id.shopping_mall);
-        btn_hospital=(Button)findViewById(R.id.hospital);
-        btn_school=(Button)findViewById(R.id.school);
-        btn_park=(Button)findViewById(R.id.park);
-        btn_cinema=(Button)findViewById(R.id.movie_theater);
-        btn_cafe=(Button)findViewById(R.id.cafe);
+        btn_restaurant=findViewById(R.id.restaurant);
+        btn_atm=findViewById(R.id.atm);
+        btn_mall=findViewById(R.id.shopping_mall);
+        btn_hospital=findViewById(R.id.hospital);
+        btn_school=findViewById(R.id.school);
+        btn_park=findViewById(R.id.park);
+        btn_cinema=findViewById(R.id.movie_theater);
+        btn_cafe=findViewById(R.id.cafe);
 
         btn_restaurant.setOnClickListener(this);
         btn_atm.setOnClickListener(this);

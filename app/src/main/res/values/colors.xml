@@ -23,6 +23,9 @@
     <color name="light_green">#2AE8D2</color>
     <color name="player_background">#80000000</color>
     <color name="double_tap">#80777575</color>
+    <color name="pink">#E11C5F</color>
+    <color name="orange">#FF5722</color>
+    <color name="light_green_2">#4CAF50</color>
     <color name="sudo_transparent">#80000000</color>
 
 
