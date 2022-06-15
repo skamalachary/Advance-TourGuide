@@ -1,10 +1,14 @@
 package com.sonu.advancesonu.main;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Address;
 import android.location.Criteria;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -197,6 +201,36 @@ public class NearActivity extends FragmentActivity implements LocationListener, 
         }
         mGoogleMap.setMyLocationEnabled(true);
 
+        mGoogleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(@NonNull LatLng latLng) {
+                List<Address> addresses;
+                Geocoder geocoder = new Geocoder(NearActivity.this);
+                try {
+                    addresses = geocoder.getFromLocation(latLng.latitude,latLng.longitude, 10);
+                    Address address = addresses.get(0);
+                    //textView.setText("" + address.getAddressLine(0));
+                    new AlertDialog.Builder(NearActivity.this)
+                            .setTitle("Address")
+                            .setMessage(address.getAddressLine(0))
+
+                            // Specifying a listener allows you to take an action before dismissing the dialog.
+                            // The dialog is automatically dismissed when a dialog button is clicked.
+                            .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            })
+
+                            // A null listener allows the button to dismiss the dialog and take no further action.
+                            .setNegativeButton(android.R.string.no, null)
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
 
         // Getting LocationManager object from System Service LOCATION_SERVICE

@@ -19,6 +19,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.sonu.advancesonu.Blank;
 import com.sonu.advancesonu.R;
 import com.sonu.advancesonu.signUpAndLogin.Login;
 import com.sonu.advancesonu.user.EditProfile;
@@ -173,6 +174,12 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 clearSharedPreference();
                 startActivity(new Intent(Home.this, Login.class));
                 finish();
+            case R.id.nav_travel:
+            case R.id.nav_utilities:
+            case R.id.nav_favourites:
+                startActivity(new Intent(Home.this, Blank.class));
+                return true;
+
 
         }
         return false;
